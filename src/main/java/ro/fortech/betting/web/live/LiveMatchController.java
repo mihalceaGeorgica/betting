@@ -1,7 +1,5 @@
 package ro.fortech.betting.web.live;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.handler;
-
 import java.time.Duration;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,7 +54,7 @@ public class LiveMatchController implements ApplicationListener<OddsChangeEvent>
 
 	@CrossOrigin
 	@GetMapping(path = "/all-matches", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-	Flux<OddsChangeEvent.Event> getFolderWatch() {
+	public Flux<OddsChangeEvent.Event> getFolderWatch() {
 		return Flux.create(sink -> {
 			MessageHandler handler = message -> sink
 					.next(OddsChangeEvent.class.cast(message.getPayload()).getEvent());

@@ -1,10 +1,6 @@
 package ro.fortech.betting.service.events;
 
-import java.nio.file.WatchEvent;
-
 import org.springframework.context.ApplicationEvent;
-
-import ro.fortech.betting.dto.MatchScoreDTO;
 
 public class OddsChangeEvent extends ApplicationEvent {
 

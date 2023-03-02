@@ -28,7 +28,7 @@ public class OddsChangeListenerService {
 
 	private final ApplicationEventPublisher eventPublisher;
 
-	OddsChangeListenerService(ApplicationEventPublisher eventPublisher) {
+	public OddsChangeListenerService(ApplicationEventPublisher eventPublisher) {
 		this.eventPublisher = eventPublisher;
 	}
 

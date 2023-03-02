@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "1-2",
+        "odd": "2.3",
+        "placingTime": null,
+        "matchBets": null
+    },
+    {
+        "id": 2,
+        "name": "x-2",
+        "odd": "1.6",
+        "placingTime": null,
+        "matchBets": null
+    },
+    {
+        "id": 3,
+        "name": "2-2",
+        "odd": "2.6",
+        "placingTime": null,
+        "matchBets": null
+    },
+    {
+        "id": 4,
+        "name": "2-2",
+        "odd": "2.6",
+        "placingTime": null,
+        "matchBets": null
+    }
+]
